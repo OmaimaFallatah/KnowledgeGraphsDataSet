@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:academicfield"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/AcademicSubject"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:actor"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Actor"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:airport"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Airport"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:amphibian"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Amphibian"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:archaea"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Archaea"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:architect"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Architect"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:artery"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Artery"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:astronaut"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Astronaut"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:athlete"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:automobileengine"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/AutombileEngine"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bacteria"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Bacteria"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Bank"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:beach"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Beach"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:beverage"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Beverage"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bird"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Bird"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:boardgame"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/BoardGame"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bone"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Bone"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:book"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Book"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:braintissue"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Brain"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bridge"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Bridge"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:cardgame"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/CardGame"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:cave"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Cave"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:celebrity"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Celebrity"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:cheese"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Cheese"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:chef"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Chef"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:chemical"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/ChemicalSubstance"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:city"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/City"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:coach"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Coach"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:color"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Colour"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:comedian"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Comedian"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:company"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Company"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:conference"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/AcademicConference"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:continent"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Continent"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:convention"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Convention"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:country"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Country"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:criminal"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Criminal"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:crustacean"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Crustacean"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:currency"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Currency"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:director"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MovieDirector"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:disease"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Disease"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:drug"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Drug"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:earthquakeevent"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Earthquake"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:election"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Election"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:ethnicgroup"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:filmfestival"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/FilmFestival"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:fish"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Fish"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:fungus"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Fungus"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:grandprix"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/GrandPrix"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:highway"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Road"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:hospital"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Hospital"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:hotel"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:insect"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Insect"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:island"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Island"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:journalist"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Journalist"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:judge"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Judge"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:lake"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Lake"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:language"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Language"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:lymphnode"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Lymph"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:magazine"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Magazine"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:mammal"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Mammal"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:mediatype"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Media"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:militaryconflict"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MilitaryConflict"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:model"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Model"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:mollusk"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Mollusca"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:monarch"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Monarch"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:monument"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Monument"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:mountain"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Mountain"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:mountainrange"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MountainRange"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:muscle"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Muscle"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:museum"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Museum"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicalbum"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Album"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicartist"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MusicalArtist"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicfestival"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MusicFestival"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicgenre"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/MusicGenre"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicinstrument"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Instrument"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:musicsong"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Song"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:newspaper"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Newspaper"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:nonprofitorganization"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Non-ProfitOrganisation"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:olympics"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Olympics"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:park"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Park"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:placeofworship"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/ReligiousBuilding"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:planet"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Planet"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:plant"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Plant"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:politicalparty"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/PoliticalParty"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:politician"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Politician"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:port"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Port"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:profession"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Profession"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:professor"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Professor"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:programminglanguage"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/ProgrammingLanguage"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:protein"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Protein"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:race"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Race"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:radiostation"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/RadioStation"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:recordlabel"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/RecordLabel"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:religion"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Religious"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:reptile"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Reptile"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:researchproject"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/ResearchProject"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:restaurant"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Restaurant"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:river"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/River"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:scientist"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Scientist"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:shoppingmall"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/ShoppingMall"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:skiarea"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/SkiArea"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:skyscraper"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Skyscraper"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:sport"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Sport"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:sportsleague"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/SportsLeague"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:sportsteam"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/SportsTeam"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:stadiumoreventvenue"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Stadium"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:street"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Street"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:televisionnetwork"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/BroadcastNetwork"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:televisionshow"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/TelevisionShow"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:televisionstation"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/TelevisionStation"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:tradeunion"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/TradeUnion"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:trainstation"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/RailwayStation"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:university"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/University"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:vehicle"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Automobile"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:vein"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Vein"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:videogame"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/VideoGame"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:visualartform"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:weapon"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Weapon"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:website"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Website"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:wine"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Wine"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:winery"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Winery"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:writer"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Writer"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:year"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Year"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:zoo"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Zoo"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:bombingevent"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Attack"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:Film"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Movie"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:awardtrophytournament"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Award"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:politicsissue"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/PoliticalConcepts"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:hobby"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Activity"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  </Alignment>
+</rdf:RDF>
