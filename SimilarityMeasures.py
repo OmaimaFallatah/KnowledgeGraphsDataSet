@@ -1,86 +1,88 @@
-import itertools
-import pysolr
-import pandas as pd
-import random
 import collections
-from textdistance import *
-from mappingFormats import *
+import itertools
+import random
 
-def searchForClass(cName,QueryDF):
+import pandas as pd
+import pysolr
+
+from BaseLinesExp import *
+
+
+# Search for a source class
+# Source KG dataframe conatain all the data about that KG
+# SolrCore this the core of the target knowledge graphs
+def searchForClass(SourceClassName, SourceKG, solrCore):
+    #QueryDF = QueryDF.set_index('Class_Name')
     i = 1
-    myRandom = 20
-    solr = pysolr.Solr('http://localhost:8983/solr/Dbpedia') #this the core of the target knowledge graphs
+    myRandom = 22
 
     final = []
-    while i <= 60:
-        MyList = []
-        MyList = QueryDF.loc[cName, 'Instances_Names'].split('|')
-        num = QueryDF.loc[cName, 'Number_of_Instances']
+    while i <= 40:
+        num = SourceKG.loc[SourceClassName, 'Number_of_Instances']
+        MyList = SourceKG.loc[SourceClassName, 'Instances_Names'].split('|')
+
         if num < myRandom:
-             #pass
-             myRandom = myRandom-12
+             myRandom = myRandom-14
         for c in range(len(MyList)):
             MyList[c] = MyList[c].strip('_').replace(':', '')
         Rlist = ' '.join(random.sample(MyList, myRandom))
-        results = solr.search('Instances_Names: %s' % (Rlist), rows=3)
+        results = solrCore.search('Instances_Names: %s' % (Rlist), rows=3)
         for result in results:
             final.append(result['Class_Name'][0])
         i += 1
     # print(final)
     return final
 
+# This method mange all the search processes
+def SearchSetting(SourceKG, SourceClassList, SolrCore):
 
-def SearchSetting(QueryDF, QueryClassList):
 
-
-    QueryDF = QueryDF.set_index('Class_Name')
+    SourceKG = SourceKG.set_index('Class_Name')
     result = pd.DataFrame(columns=['Source_Class', 'Target_Class'])
     CandList = []
-
-    #QueryClassList=['sidebar_individual','sidebar_novel', 'sidebar_planet',"uss", "decade_nav","planet_ordinals"]
-    for c in range(len(QueryClassList)):
+    alignment = []
+    for c in range(len(SourceClassList)):
         FinalList = []
-        loopCount = 0  # I want to do 3 attempt before giving up search for a match
+
+        loopCount = 0
         while loopCount <= 15 and len(FinalList) < 3:
-            FinalList = searchForClass(QueryClassList[c], QueryDF)
+            FinalList = searchForClass(SourceClassList[c], SourceKG, SolrCore)
             loopCount += 1
 
         if loopCount > 15 and len(FinalList) != 0:
-            # print ('I only found those :(', FinalList)
             for l in range(len(FinalList)):
-                CandList.append(tuple([QueryClassList[c]] + [FinalList[l].lower()]))
-            # if we are giving up
-
-        else:  # we have 3 or more element
+                CandList.append(tuple([SourceClassList[c]] + [FinalList[l].lower()]))
+                if (levenshtein.normalized_similarity(SourceClassList[c], FinalList[l].lower()) > 0.4):
+                    alignment.append((getNellURI(SourceClassList[c]), getDBpediaURI(FinalList[l])))
+        else:
             counter = collections.Counter(FinalList)
             if len(counter) == 1:
-                # print ('Yay we have a match for ' + NClassList[c] , counter)
-                # print (FinalList, loopCount)
-                CandList.append(tuple([QueryClassList[c]] + [FinalList[0].lower()]))
+                CandList.append(tuple([SourceClassList[c]] + [FinalList[0].lower()]))
+                if (levenshtein.normalized_similarity(SourceClassList[c], FinalList[0].lower()) > 0.4):
+                    alignment.append((getNellURI(SourceClassList[c]), getDBpediaURI(FinalList[0])))
             elif len(counter) == 2:  # we have two matching classes one repeated
-                # print ('MM we have two matches for ' + NClassList[c] , counter)
                 for i in counter.most_common(2):
-                    CandList.append(tuple([QueryClassList[c]] + [i[0].lower()]))
-            elif len(counter) >= 3:
-                # print ('Yay we have 3 match for ' + NClassList[c] , counter.most_common(3))
+                    CandList.append(tuple([SourceClassList[c]] + [i[0].lower()]))
+                    if (levenshtein.normalized_similarity(SourceClassList[c], i[0].lower()) > 0.4):
+                        alignment.append((getNellURI(SourceClassList[c]), getDBpediaURI(i[0])))
+            elif len(counter) >= 3:# If we have 3 or more element
                 for i in counter.most_common(3):
-                    CandList.append(tuple([QueryClassList[c]] + [i[0].lower()]))
-    return CandList
+                    CandList.append(tuple([SourceClassList[c]] + [i[0].lower()]))
+                    if (levenshtein.normalized_similarity(SourceClassList[c], i[0].lower()) > 0.4):
+                        alignment.append((getNellURI(SourceClassList[c]), getDBpediaURI(i[0])))
+    return alignment
 
-def get_Name_Similarity(N, D):
-    CandidateList=[]
+# Returns pairs of similar classes names based on edit distance (Lev)
+def get_Name_Similarity(Source, Target):
     alignment=[]
-    for i in range(len(N)):
-        for j in range(len(D)):
-            if (levenshtein.normalized_similarity(N[i].lower(), D[j].lower()) > 0.4):
-                # CandidateList.append([ NList[i], DBlist[j]])
-                CandidateList.append(tuple([N[i]] + [D[j]]))
-                alignment.append((N[i], N[j], '=', 1.0))
+    for i in range(len(Source)):
+        for j in range(len(Target)):
+            if (levenshtein.normalized_similarity(Source[i].lower(), Target[j].lower()) > 0.4):
+                alignment.append(tuple([Source[i]] + [Target[j]]))
 
-    outputfile = 'Lev_matcher_alignment.xml'
-
-    write_Mappings(outputfile, CandidateList)
-    return CandidateList
+    outputfile = 'Label_matcher_alignment.xml'
+    write_Mapping(outputfile, alignment)
+    return alignment
 
 def isequal(a, b):
    try:
@@ -99,8 +101,6 @@ def GS_Prep(FinalDF):
     GS = pd.DataFrame(columns=['KG1_NELL', 'URI1', 'KG2_DBpedia', 'URI2', 'Relation'])
     nellURI = 'http://rtw.ml.cmu.edu/rtw/kbbrowser/pred:'
     for i in range(len(FinalDF)):
-        # for j in FinalDF.loc[i,'Class_Pair']:
-        # print FinalDF.loc[i,'Class_Pair'][0], FinalDF.loc[i,'Class_Pair'][1]
         nURI = nellURI + FinalDF.loc[i, 'Class_Pair'][0]
         dURI = getClassURI(FinalDF.loc[i, 'Class_Pair'][1])
         GS = GS.append(
@@ -108,6 +108,7 @@ def GS_Prep(FinalDF):
              'URI2': dURI}, ignore_index=True)
     GS.to_csv('testGS.csv')
 
+# This combines the two similarity measures - (name + instance)
 def main():
     df = pd.read_csv('DBlist.csv')
     df2 = pd.read_csv('NellList.csv')
@@ -123,6 +124,7 @@ def main():
 
     StrSim=get_Name_Similarity(N,D)
 
+
     c = list(list(itertools.product(N, D)))
     FinalDF = pd.DataFrame(columns=['Class_Pair', 'Name_Similarity', 'Instance_Similarity'])
     FinalDF['Class_Pair'] = c
@@ -132,12 +134,13 @@ def main():
             if FinalDF.loc[i, 'Class_Pair'] == StrSim[j]:
                 FinalDF.loc[i, 'Name_Similarity'] = 1
 
-    #DBlist=['musicsong','actor', 'conference',"airport", "placeofworship","restaurant"]
-    InistanceSim=SearchSetting(df2, NList)
+
+    solr = pysolr.Solr('http://localhost:8983/solr/Dbpedia')
+    InistanceSim=SearchSetting(df2, NList,solr)
     for i in range(len(FinalDF)):
         for j in range(len(InistanceSim)):
             if FinalDF.loc[i, 'Class_Pair'] == InistanceSim[j]:
-                FinalDF.loc[i, 'Instance_Similarity'] = 1
+                FinalDF.loc[i, 'Instance_Similarity1'] = 1
 
     for i in range(len(FinalDF)):
         if FinalDF.loc[i, 'Name_Similarity'] != 1 and FinalDF.loc[i, 'Instance_Similarity'] != 1:
@@ -145,7 +148,41 @@ def main():
 
     FinalDF = FinalDF.reset_index()
     GS_Prep(FinalDF)
+    outputfile = 'Combined_matcher_alignment.xml'
+
+    write_Mapping(outputfile, InistanceSim)
+
+    #Evaluator(outputfile)
+
+# Only measure instance similarity
+def main2():
+    df = pd.read_csv('DBlist.csv')
+    df2 = pd.read_csv('NellList.csv')
+    DBlist = df['Class_Name'].to_list()
+    NList = df2['Class_Name'].to_list()
+    N = []
+    D = []
+    for j in range(len(NList)):
+        N.append(NList[j].lower())
+
+    for j in range(len(DBlist)):
+        D.append(DBlist[j].lower())
+
+    c = list(list(itertools.product(N, D)))
+    FinalDF = pd.DataFrame(columns=['Class_Pair', 'Name_Similarity', 'Instance_Similarity1'])
+    FinalDF['Class_Pair'] = c
+
+    # the solr core for the target knowledge graph
+    solr = pysolr.Solr('http://localhost:8983/solr/DBpedia')
+    InistanceSim = SearchSetting(df2, NList, solr)
+
+    outputfile = 'Inistance_matcher_alignment.xml'
+
+    write_Mapping(outputfile, InistanceSim)
+
+    #Evaluator(outputfile)
+
 
 if __name__ == "__main__":
-    #logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.INFO)
+   # logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=logging.INFO)
     main()
